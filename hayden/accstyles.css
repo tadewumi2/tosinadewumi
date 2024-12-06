@@ -1,0 +1,289 @@
+/********f************
+    
+    Project 1 Stylesheet
+    Name: Adewumi Tosin
+    Date: 20th October, 2024
+    Description:
+
+*********************/
+
+html, body, section, p, header, nav, footer,
+div, article, aside, ol, ul, li, h1, h6 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e6e6e6;
+	font-family: verdana;
+}
+
+div#container {
+	width: 80%;
+	background-color: darkgoldenrod;
+	border-radius: 8px;
+	margin: 10px auto;
+	padding: 10px;
+	box-shadow: 1px 1px 2px #a2a2a2, -1px -1px 2px #a2a2a2;
+}
+
+#headingrow1{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+	
+#headingrow1 ul{
+	margin-top: 30px;
+}
+
+#headingrow1 nav ul{
+	display: flex;
+	list-style: none;
+	margin-top: 40px;
+	padding: 0;
+}
+
+.hayden {
+	letter-spacing: 10px;
+	margin-left: 25px;
+	padding-top: 20px;
+	font-size: 40px;
+}
+
+.hayden2 { 
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+	right: 0;
+	margin-right: 30px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	letter-spacing: 5px;
+}
+ 
+ .firstRow li {
+ 	list-style: none;
+ 	font-size: 12px;
+ }
+
+ .firstRow li a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.firstRow li a::after {
+    content: " |";
+    margin-left: 10px;
+}
+
+.firstRow li:last-child a::after {
+    content: ""; 
+}
+
+#headingrow2{
+	background-image: url('images/headerBackground.jpeg');
+	width: 100%;
+	height: 200px;
+	position: relative;
+	color: #FFF;
+	font-family: sans-serif;
+}
+#headingrow3{
+	width: 100%;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: darkgoldenrod;
+	box-sizing:border-box;
+}
+
+.secondRow li {
+ 	list-style: none;
+ 	font-size: 12px;
+ }
+
+ .secondRow li a {
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* Add the pipe (|) after each link, except the last one */
+.secondRow li a::after {
+    content: " |";
+    margin-left: 10px;
+    color: #A9A9A9;
+}
+
+.secondRow li:last-child a::after {
+    content: ""; 
+}
+#headingrow3 nav ul{
+	display: flex;
+}
+#headingrow4 {
+	flex: 1;
+	margin-right: 20px;
+}
+.row5 nav {
+	margin-bottom: 30px;
+}
+.thirdRow {
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 10px;
+    border: 0px solid #FFF; /* Add a border to create the box */
+    padding: 5px 10px; /* Padding inside each box */
+    background-color: linear-gradient(white, silver);
+}
+
+.fourthRow li {
+    font-size: 10px;
+    border: 0px solid grey; /* Add a border to create the box */
+    padding: 5px 10px; /* Padding inside each box */
+    background-image: linear-gradient(white, silver);
+    text-decoration: none;
+    list-style-position: inside;
+    font-family: arial;
+    height: 30px;
+}
+.fourthRow li a, .row4 li a {
+	color: #000;
+}
+
+#aside1 {
+	width: 30%;
+	float: left;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000; 
+    width: 100%; 
+    margin-top: 0px;
+    color: fff;
+}
+
+#aside2 p {
+	font-size: 10px;
+	width:100%;
+	margin-top: 0;
+}
+
+.goldenboomlogo {
+	float: right;
+	height: 60px;
+	width: 80px;
+}
+#mainbody {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#content {
+	flex: 3;
+	width: 70%;
+}
+
+#content h1 {
+	font-size: 12px;
+}
+#content h2{
+	margin-bottom: 2px;
+}
+#content ul {
+	list-style: none;
+	padding-top: 20px;
+}
+ #content {
+    align-self: flex-start;
+}
+
+#plinks ul li a {
+	line-height: 40px;
+	flex: 1;
+}
+
+#aside3 {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#plinks {
+	width: 70%;
+	flex: 3;
+}
+
+#aside5 {
+	width:30%px;
+	flex: 1;
+	border: 1px solid #000;
+	font-size: 8px;
+	padding: 5px 5px;
+	margin-top: 30px;
+}
+.aside3 {
+    width: 100%; /* Ensure the image scales responsively */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#footer {
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+	font-size: 8px;
+	margin-top: 50px;
+}
+
+.bottomPageLinks {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+#footer nav ul li{
+	padding: 5px ;
+}
+.maplink::before {
+    content: " | ";
+    color: #000;
+}
+
+a:hover, a:focus {
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 40px;
+}
+a {
+	color: #0066B2;
+	text-decoration: none;
+}
+
+.bottomPageLinks li a::after {
+    content: " |";
+    color: #000;
+}
+
+.bottomPageLinks li:last-child a::after {
+    content: ""; 
+}
+.logo {
+	height: 60px;
+	width: 80px;
+}
+
+#headingrow2 p {
+	background-color:  rgba(0, 0, 0, 0.4);
+	border-radius: 40px;
+}
+.image3{
+	width:200px;
+	height: 160px;
+}

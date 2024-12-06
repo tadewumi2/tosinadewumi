@@ -1,0 +1,105 @@
+/********f************
+
+    Do not alter this comment block. 
+    Only fill out the information below.
+    Payroll Calculator
+    Name: Tosin Adewumi
+    Date: 9th November, 2024
+    Description: Math Calculation in Javascript
+
+********************/
+
+body {
+	background: linear-gradient(45deg,#343434,#402029,#36454f,#353839,#100C08,#1E1E1E) 0 0 / 1000% no-repeat;
+    animation: animate 5s ease infinite;
+	font-family: Calibri;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 30%, 0 0;
+    }
+    50%{
+        background-position: 100% 70%, 0 0;
+    }
+    100%{
+        background-position: 0 30%, 0 0;
+    }
+}
+
+#content {
+	width: 600px;
+	margin: 30px auto;
+	border: 3px white solid;
+	border-radius: 35px 25px 3px;
+	-moz-border-radius: 35px 25px 3px;
+	background-color: rgba(102, 0, 102, 0.1);
+}
+#payForm {
+	width: 400px;
+	margin: 30px auto;
+	padding: 10px;
+	border: 3px white solid;
+	border-radius: 35px 25px 3px;
+	-moz-border-radius: 35px 25px 3px;
+	background: #e2c5e2;
+}
+
+#payForm label {
+	float: left;
+	width: 150px;
+	text-align: right;
+}
+
+#payForm footer {
+	margin: 5px auto;
+	clear: both;
+	padding-left: 150px;
+}
+
+#payForm input[type='submit'] {
+	margin: 0px auto;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	background: red;
+	color: white;
+}
+
+table {
+	background: #c5e2c5;
+	border: 2px black solid;
+	margin: 10px auto;
+	width: 500px;
+}
+
+tr:nth-child(odd) {
+	background: #ffffff;
+}
+
+th {
+	background: #e2c5e2;
+	padding: 3px;
+}
+
+td,
+th {
+	border: 1px black solid;
+	width: 100px;
+}
+
+#content > h1 {
+	text-align: center;
+	width: 600px;
+	color: white;
+}
+
+.totals {
+	font-weight: bold;
+}
+
+.totals > td {
+	border-top: 3px solid black;
+}
