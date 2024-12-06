@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Contact Form</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="shortcut icon" href="#">
+		<script src="js/utilityFunctions.js"></script>
+		<script src="js/formValidate.js"></script>
+	</head>
+	<body>
+		<div id="contactWrapper">
+			<main>
+				<div id="headerDiv">
+		            <header>
+		                <h1>Tosin Adewumi</h1>
+		            </header>
+		            <nav id="headerNav" aria-label="Main Navigation">
+		                <ul id = "navBar">
+		                    <li><a href="index.html">Home</a></li>
+		                    <li><a href="aboutMe.html">About Me</a></li>
+		                    <li><a href="myProjects.html">Projects</a></li>
+		                    <li><a href="skills.html">Skills</a></li>
+		                    <li><a href="#">Contact Me</a></li>
+		                </ul>
+		            </nav>
+	        	</div>
+				<form id = "orderform" action="https://www.stungeye.com/school/webdev/thankyou.php" method="post">
+					<fieldset id="paymentInfo">
+						<div class="left">
+							<a id="shippinginfo"><h2>Contact Information</h2></a>
+							<ul>
+								<li>
+									<label for="fullname">Full Name</label>
+									<input id="fullname" name="fullname" type="text">
+									<p class="shippingError error" id="fullname_error">* Required field</p>
+								</li>
+								<li>
+									<label for="address">Address</label>
+									<input id="address" name="address" type="text">
+									<p class="shippingError error" id="address_error">* Required field</p>
+								</li>
+								<li>
+									<label for="city">City</label>
+									<input id="city" name="city" type="text">
+									<p class="shippingError error" id="city_error">* Required field</p>
+								</li>
+								<li>
+									<label for="province">Province</label>
+									<select id="province" name="province">
+										<option value="AB">Alberta</option>
+										<option value="BC">British Columbia</option>
+										<option value="MB">Manitoba</option>
+										<option value="NB">New Brunswick</option>
+										<option value="NL">Newfoundland and Labrador</option>
+										<option value="NS">Nova Scotia</option>
+										<option value="ON">Ontario</option>
+										<option value="PE">Prince Edward Island</option>
+										<option value="QC">Quebec</option>
+										<option value="SK">Saskatchewan</option>
+										<option value="NT">Northwest Territories</option>
+										<option value="NU">Nunavut</option>
+										<option value="YT">Yukon</option>
+									</select>
+									<p class="shippingError error" id="province_error">* Required field</p>
+								</li>
+								<li>
+									<label for="postal">Postal Code</label>
+									<input id="postal" name="postal" type="text">
+									<p class="shippingError error" id="postal_error">* Required field</p>
+									<p class="shippingError error" id="postalformat_error">* Invalid postal code</p>
+								</li>
+								<li>
+									<label for="email">Email</label>
+									<input id="email" name="email" type="text">
+									<p class="shippingError error" id="email_error">* Required field</p>
+									<p class="shippingError error" id="emailformat_error">
+										* Invalid email address</p>
+								</li>
+								<li><label for="comments">Your Comments:</label>
+  									<textarea id="comments" name="comments" rows="10" cols="50" placeholder="Write your comments here..."></textarea>
+								</li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+						<p class="center">
+							<button type="submit" id="submit">Submit</button>
+							<button type="reset" id="clear">Reset</button>
+						</p>
+					</fieldset>
+				</form>
+			</main>
+			<footer id="footer">
+				<nav>
+					<ul class = "bottomPageLinks">
+						<li><a href="index.html">Home</a></li>
+	                    <li><a href="aboutMe.html">About Me</a></li>
+	                    <li><a href="myProjects.html">Projects</a></li>
+	                    <li><a href="skills.html">Skills</a></li>
+	                    <li><a href="#">Contact Me</a></li>
+					</ul>
+				</nav>
+				<p>Copyright &copy; 2024 Tosin Adewumi</p>
+			</footer>
+		</div>
+	</body>
+</html>

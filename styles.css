@@ -1,0 +1,511 @@
+/********f************
+    
+    Project 1 Stylesheet
+    Name: Adewumi Tosin
+    Date: 20th October, 2024
+    Description: Project 4 (Website Deployment)
+
+*********************/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic);
+
+#wrapper{
+    height: 600px;
+    /*background-image: linear-gradient(#cb60b3, #ffffff);
+    background: linear-gradient(45deg,#343434,#402029,#36454f,#353839,#100C08,#1E1E1E) 0 0 / 1000% no-repeat;*/
+    background: linear-gradient(45deg, #cb60b3, #a14a8a, #873971, #6c2c5d, #502245) 0 0 / 1000% no-repeat;
+    animation: animate 3s ease infinite;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #606;
+    border: 1px #000 solid;
+    box-shadow: 5px 5px 10px #000;
+}
+header h1{
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    font-family: baloo;
+    font-size: 60px;
+    margin: auto;
+}
+
+#headerNav {
+    width: 90%;
+    background-image: linear-gradient(#cb60b3, #ffffff);
+    border: 2px #000 solid;
+    font-weight: bold;
+    color: #FFF;
+    margin: auto;
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+#navBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    height: 20px;
+    list-style: none;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+#headerNav nav ul li a{
+    text-decoration: none;
+    font-size: 1.3em;
+    flex-wrap: wrap;
+    color: #FFF;
+
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 30%, 0 0;
+    }
+    50%{
+        background-position: 100% 70%, 0 0;
+    }
+    100%{
+        background-position: 0 30%, 0 0;
+    }
+}
+
+.mypic {
+    height: 200px;
+    width: 30%;
+    border-radius: 80px;
+    padding: 0px;
+    margin-top: 20px;
+    margin-left: 15px;
+    
+}
+
+#meWrapper {
+    background-color: #fff;
+    height:250px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 0 10px #cb60b3, 0 0 20px #cb60b3, 0 0 30px #cb60b3, 0 0 80px #cb60b3, 0 0 100px #cb60b3;
+    display: flex;
+    margin-top: 50px;
+    border-radius: 40px 40px 0px 0px;
+}
+#profileText {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    line-height: 30px;
+    font-family: baloo;
+}
+
+#navBar li a:hover {
+    transform: scale(1.2); 
+    background-color: #333; 
+    color: #fff; 
+    border-color: #fff;
+}
+
+#navBar li a {
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    padding: 5px 5px;
+    background-color: rgba(102, 0, 102, 0.1);
+}
+
+#aboutWrapper{
+    background-image: url("images/ff.jpeg");
+}
+#skillsWrapper{
+    background-image: url("images/bd.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#box {
+    height: 200px;
+    border: 1px #000 solid;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 45%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 30px;
+    line-height: 30px;
+    font-family: baloo;
+    text-align: justify;
+    margin-top: 40px;
+    cursor: grab;
+} 
+
+#box2 {
+    height: 150px;
+    border: 1px #000 solid;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 45%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 30px;
+    line-height: 30px;
+    font-family: baloo;
+    text-align: justify;
+    margin-top: 40px;
+    cursor: grab;
+}
+
+#box3 {
+    height: 150px;
+    border: 1px #000 solid;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 45%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 30px;
+    line-height: 30px;
+    font-family: baloo;
+    text-align: justify;
+    margin-top: 40px;
+    cursor: grab;
+} 
+
+#projectWrapper{
+    background-image: url("images/ff.jpeg");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.picBox{
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    font-family: baloo;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 90%;
+    perspective: 1000px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.innerCard{
+    position: relative;
+    width: 80%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.frontCard{
+    backface-visibility: hidden;
+    background-image: linear-gradient(#cb60b3, #ffffff);
+    color: #000;
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.backCard img{
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.backCard{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.card:hover .innerCard{
+    transform: rotateY(-180deg);
+}
+a{
+    text-decoration: none;
+}
+
+.box1 {
+    height: 300px;
+    border: 1px #000 solid;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 50%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 30px;
+    line-height: 30px;
+    font-family: baloo;
+    text-align: justify;
+    margin-top: 40px;
+    cursor: grab;
+} 
+
+    .box1 h2, #box h2 {
+        background-color: rgba(102, 0, 102, 0.4);
+        border-radius: 10px;
+        text-align: center;
+    }
+fieldset#orderInfo,
+fieldset#paymentInfo {
+    border-radius: 10px;
+    margin: 15px auto;
+    box-shadow: 2px 2px 4px #ccc, -2px -2px 4px #ccc;
+}
+
+ul,
+ol {
+    list-style: none;
+    display: inline;
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    text-align: center;
+}
+
+/*  Styles for the Order Products area*/
+
+#orderInfo h3 {
+    margin-bottom: 0px;
+}
+
+#orderInfo .right {
+    float: right;
+    width: 25%;
+}
+
+#orderInfo .left {
+    float: left;
+    width: 75%;
+}
+
+#paymentInfo .left {
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#paymentInfo .right {
+    float: right;
+    width: 50%;
+}
+
+#paymentInfo h3 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#paymentInfo .left ul li {
+    width: 90%;
+    /*background: #EEE;*/
+    /*border:1px solid black;*/
+    border-radius: 5px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+#paymentInfo .left label {
+    display: inline-block;
+    width: 100px;
+    margin-top: 2px;
+}
+
+#comments {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+#paymentInfo .left input {
+    display: inline-block;
+    width: 50%;
+    height: 26px;
+    padding-left: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+#paymentInfo .left select {
+    display: inline-block;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 3px;
+    color: #333;
+}
+
+.error {
+    color: red;
+}
+
+.shippingError {
+    margin-left: 110px;
+}
+
+#submit,
+#clear {
+    height: 36px;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 16px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+#submit {
+    margin-right: 15px;
+}
+
+#submit:hover,
+#clear:hover {
+    cursor: pointer;
+}
+
+#contactWrapper {
+    background-image: linear-gradient(#cb60b3, #ffffff);
+}
+#orderform{
+    width: 80%;
+    margin: auto;
+}
+
+#footer {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: auto;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.bottomPageLinks {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#footer nav ul li, #footer p{
+    padding: 5px ;   
+}
+
+#footer a{
+    color: #000;
+}
+
+.bottomPageLinks li a::after {
+    content: " |";
+    color: #000;
+}
+
+.bottomPageLinks li:last-child a::after {
+    content: ""; 
+}
+#main {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 640px) {
+    #headerNav ul {
+        flex-direction: column; 
+        /*align-items: center;*/
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    #headerNav ul li{
+        border: 1px solid #AAA;
+        background-color: #777;
+        height: 60px;
+        line-height: 60px;
+        transition: 1s;
+        width: 100%;
+        background-image: linear-gradient(#cb60b3, #ffffff);
+    }
+
+  body {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  h1 {
+    font-size: 2.6em;
+    text-align: center;
+  }
+
+  #contactWrapper {
+    padding: 10px;
+  }
+
+  #contactWrapper {
+    padding: 10px;
+  }
+  #aboutWrapper {
+    padding: 10px;
+  }
+  #headerNav {
+        width: 90%;
+        background-image: none;
+        border: none;
+        font-weight: bold;
+        color: #FFF;
+        margin: auto;
+        box-shadow: none;
+        margin-bottom: 300px;
+    }
+
+    #profileText {
+        text-align: center;
+        margin: auto;
+        width: 50%;
+        line-height: 30px;
+        font-family: baloo;
+        height: 200px;
+    }
+
+    #box {
+        height: 400px;
+    }
+    #box2 {
+        height: 400px;
+    }
+    #box3 {
+        height: 400px;
+    }
+
+    .box1 {
+        height: 600px;
+    }
+    #meWrapper{
+        height: 400px;
+        width: 300px;
+    }
+
+}
